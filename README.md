@@ -4,3 +4,4 @@ mobx和react结合使用demo
 Git has a mutable index called stage.
 My stupid boss still prefers SVN.
 Creating a new branch is quick.
+Creating a new branch is quick AND simple.
