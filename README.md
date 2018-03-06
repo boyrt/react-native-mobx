@@ -1,2 +1,2 @@
 # react-native-mobx
-mobx使用demo
+mobx和react结合使用demo
