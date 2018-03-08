@@ -17,6 +17,8 @@ import CartScreen from './scene/cart/CartScreen'
 import MineScreen from './scene/mine/MineScreen'
 import ItemDetail from './scene/itemDetail/ItemDetail'
 import OrderScreen from './scene/order/OrderScreen'
+import WelcomeScreen from './scene/demo2/WelcomeScreen'
+import CounterScreen from './scene/demo2/CounterScreen'
 
 // 全局注册并注入mobx的Rootstore实例，首页新品，分类页，商品详情页，购物车页面都要用到store
 const Navigation = () => {
@@ -117,7 +119,9 @@ const Navigator = StackNavigator(
         Tab : { screen : Tab },
         ItemDetail:{screen: ItemDetail},
         Cart:{screen: CartScreen},
-        OrderScreen: {screen: OrderScreen}
+        OrderScreen: {screen: OrderScreen},
+        WelcomeScreen:{screen:WelcomeScreen},
+        CounterScreen:{screen:CounterScreen},
 
     },
     {

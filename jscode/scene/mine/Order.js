@@ -45,7 +45,8 @@ const Order = (props) => {
             <Line title={'会员中心'} subtitle={'☺'}/> 
             <Line title={'优惠卷'} subtitle={'✉'}/>
             <Line title={'联系我们'} subtitle={'☎'}/>
-            <Line title={'关于'} subtitle={'版本: 1.0'}/>
+            <Line title={'关于'} subtitle={'版本: 1.0'} />
+            <Line title={'下个demo'} subtitle={'♂'} onPress={()=>goNextDemo(props)}/>
 
         </View>
     )
@@ -53,6 +54,10 @@ const Order = (props) => {
 
 const goOrderScreen = (props) => {
     props.navigation.navigate('OrderScreen',{})
+}
+
+const goNextDemo = (props) => {
+    props.navigation.navigate('WelcomeScreen')
 }
  
 const styles = {
