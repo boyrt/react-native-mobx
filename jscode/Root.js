@@ -19,6 +19,7 @@ import ItemDetail from './scene/itemDetail/ItemDetail'
 import OrderScreen from './scene/order/OrderScreen'
 import WelcomeScreen from './scene/demo2/WelcomeScreen'
 import CounterScreen from './scene/demo2/CounterScreen'
+import Parent2ChildScreen from './scene/parent2child/Parent2ChildScreen'
 
 // 全局注册并注入mobx的Rootstore实例，首页新品，分类页，商品详情页，购物车页面都要用到store
 const Navigation = () => {
@@ -122,6 +123,7 @@ const Navigator = StackNavigator(
         OrderScreen: {screen: OrderScreen},
         WelcomeScreen:{screen:WelcomeScreen},
         CounterScreen:{screen:CounterScreen},
+        Parent2ChildScreen:{screen:Parent2ChildScreen},
 
     },
     {

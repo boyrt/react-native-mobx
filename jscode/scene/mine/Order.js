@@ -47,6 +47,7 @@ const Order = (props) => {
             <Line title={'联系我们'} subtitle={'☎'}/>
             <Line title={'关于'} subtitle={'版本: 1.0'} />
             <Line title={'下个demo'} subtitle={'♂'} onPress={()=>goNextDemo(props)}/>
+            <Line title={'mobx传递给子组件'} subtitle={'♂'} onPress={()=>goParent2ChildScreen(props)}/>
 
         </View>
     )
@@ -58,6 +59,10 @@ const goOrderScreen = (props) => {
 
 const goNextDemo = (props) => {
     props.navigation.navigate('WelcomeScreen')
+}
+
+const goParent2ChildScreen = (props) => {
+    props.navigation.navigate('Parent2ChildScreen')
 }
  
 const styles = {
