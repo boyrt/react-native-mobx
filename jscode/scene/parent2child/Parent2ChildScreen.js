@@ -10,8 +10,8 @@ import {
 } from 'react-native';
 
 import {observer} from 'mobx-react'
-import openStore from '../../mobx/open_store'
 import ChildView from './ChildView'
+import openStore from '../../mobx/open_store'
 
 @observer
 export default class Parent2ChildScreen extends Component {
@@ -22,7 +22,6 @@ export default class Parent2ChildScreen extends Component {
     render() {
         return (
             <View style={styles.container}>
-                {/*<Text>{openStore.open ? '开启状态':'关闭状态'}</Text>*/}
                 <Text>{`开启状态:${openStore.open}`}</Text>
                 <ChildView store={openStore}/>
             </View>
